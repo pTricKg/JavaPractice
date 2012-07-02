@@ -6,15 +6,18 @@ public class authenticate {
 		String username = JOptionPane.showInputDialog("Username");
 		String password = JOptionPane.showInputDialog("Password");
 		
+//		int howMany = Integer.parseInt(JOptionPane.showInputDialog("How Many?"));
+//		double howManyTwo = Double.parseDouble(JOptionPane.showInputDialog("How Many..?"));
+		
 		if (
 			username != null &&
 			password != null && 
 			(
-					(username.equals("pTricKg") && password.equals("yerMomDontWearKnowShoes"))
+					(username.equals("pTricKg") && password.equals("yerMomsShoes"))
 				)
 				)
 							{
-				JOptionPane.showMessageDialog(null, "You're in, sexy beast");
+				JOptionPane.showMessageDialog(null, "You're in!");
 							}else{
 								JOptionPane.showMessageDialog(null, "You're an evildoer! Go away!");
 							}
