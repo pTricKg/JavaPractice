@@ -18,8 +18,7 @@ public class ifGuess {
 		while (inputNumber != randomNumber) {
 			out.println();
 			out.println("Sorry! That's not it.");
-			out.println(inputNumber);
-			out.println("is not what I'm looking for.");
+			out.println(inputNumber + " is not what I'm looking for.");
 			out.println("Give it another try...");
 			inputNumber = pickNumber.nextInt();
 			numberGuess++;
@@ -31,7 +30,7 @@ public class ifGuess {
 			}
 //				else {
 //				out.println("Sorry! That's not it.");
-//				out.println(inputNumber);
+//				out.println(inputNumber + "is not what I'm looking for.");
 //				out.println("is not what I'm looking for.");
 				
 //			}
@@ -39,7 +38,7 @@ public class ifGuess {
 		}
 		
 		
-		out.println("You win after ");
-		out.println(numberGuess + " guesses.");
+		out.println("You win after " + numberGuess + " guesses.");
+		
 	}
 }
