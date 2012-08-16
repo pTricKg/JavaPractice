@@ -10,7 +10,7 @@ public class guessWindow {
 		Scanner pickNumber = new Scanner (System.in);
 		
 		int pickAnumber = Integer.parseInt(JOptionPane.showInputDialog("Pick an integer from 1 to 10"));
-		int inputNumber = pickNumber.nextInt();
+		//int inputNumber = pickNumber.nextInt();
 		int randomNumber = new Random().nextInt(10) + 1;
 	
 		

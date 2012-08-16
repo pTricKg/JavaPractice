@@ -11,34 +11,20 @@ public class ifGuess {
 		
 		out.print("Enter a whole number from 1 to 10: ");
 		
-		int numberGuess = 0;
+		
 		int inputNumber = pickNumber.nextInt();
 		int randomNumber = new Random().nextInt(10) + 1;
 		
-		while (inputNumber != randomNumber) {
-			out.println();
-			out.println("Sorry! That's not it.");
-			out.println(inputNumber + " is not what I'm looking for.");
-			out.println("Give it another try...");
-			inputNumber = pickNumber.nextInt();
-			numberGuess++;
-			
-			if (inputNumber == randomNumber) {
-				out.println("Hurray!");
-				out.println("You Win!");
-				out.println("The force is strong with this one.");
-			}
-//				else {
-//				out.println("Sorry! That's not it.");
-//				out.println(inputNumber + "is not what I'm looking for.");
-//				out.println("is not what I'm looking for.");
-				
-//			}
-			
+		if (inputNumber == randomNumber) {
+			out.println("Hurray!");
+			out.println("You Win!");
+			out.println("Hurray!");
+		}else {
+				out.println("Sorry! You lose.");
+				out.println("The correct number was ");
+				out.println(randomNumber + ".");
+						
 		}
-		
-		
-		out.println("You win after " + numberGuess + " guesses.");
-		
+		out.println("Thanks for playing!");
 	}
 }
