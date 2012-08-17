@@ -10,13 +10,13 @@ public class UseAccount {
 //		myAccount = new Account();
 //		yourAccount = new Account();
 		
-		myAccount.name = "ptrickg";
-		myAccount.address = "123 Cyberspace Street";
-		myAccount.balance = 24.12;
+		myAccount.setName(" ptrickg ");
+		myAccount.setAddress("123 Cyberspace Street");
+		myAccount.setBalance(24.12);
 		
-		yourAccount.name = "Jane";
-		yourAccount.address = "123 Spacecyber Street";
-		yourAccount.balance = 62.31;
+		yourAccount.setName(" Jane ");
+		yourAccount.setAddress("123 Spacecyber Street");
+		yourAccount.setBalance(62.31);
 //		calling method from Account display
 		myAccount.display();
 		
@@ -33,20 +33,29 @@ public class UseAccount {
 		double yourInterestAmount = yourAccount.getInterest(yourInterestRate);//return double value from getInterest
 		out.print(yourInterestAmount);
 		out.println(" interest ");
+		
+		double myInterest = myAccount.getInterest(5.00);
+		double yourInterest = yourAccount.getInterest(7.00);
+		
+		out.printf("$%4.2f\n", myInterest);//formatting strings($display_symbol-
+		out.printf("$%5.2f\n", myInterest);//%n=places to display number-
+		out.printf("$%.2f\n", myInterest);//.nf=places two right of decimal-
+		out.printf("$%3.2f\n", myInterest);//\n= new line
+		out.printf("$%.2f $%.2f", myInterest, yourInterest);
 				
-//		out.print(myAccount.name);
-//		out.print("(");
-//		out.print(myAccount.address);
-//		out.print(") has $");
-//		out.print(myAccount.balance);
-//		out.println();
-//		
-//		out.print(yourAccount.name);
-//		out.print("(");
-//		out.print(yourAccount.address);
-//		out.print(") has $");
-//		out.print(yourAccount.balance);
-//		out.println();
+		out.print(myAccount.getName());
+		out.print("(");
+		out.print(myAccount.getAddress());
+		out.print(") has $");
+		out.print(myAccount.getBalance());
+		out.println();
+		
+		out.print(yourAccount.getName());
+		out.print("(");
+		out.print(yourAccount.getAddress());
+		out.print(") has $");
+		out.print(yourAccount.getBalance());
+		out.println();
 		
 		
 	}
