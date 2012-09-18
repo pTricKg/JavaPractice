@@ -3,7 +3,7 @@ package com.javaPractice.Team;
 import java.text.DecimalFormat;
 
 public class PlayerExt extends Player{
-	private static int playerCount = 0;
+	private static int playerCount = 0;  //class variables = belongs to entire class
 	private static double totalOfAverages = .000;
 	private static DecimalFormat decFormat = new DecimalFormat();
 	
