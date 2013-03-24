@@ -43,7 +43,13 @@ class Inventory {
 		}catch (NumberTooLargeException e) {
 			out.print("This isn't right, ");
 			out.println("but I'm unclear what the problem is.  Try your input again.");
+		//another catch either/or exception on sides of pipe symbol
 		}
+		//another catch either/or exception on sides of pipe symbol
+//		catch (NumberFormatException | OutOfRangeException e) {
+//			out.print(numBoxesIn);
+//			out.println("? That's impossible!");
+//		}
 		out.println("Incredible!");
 	}	
 

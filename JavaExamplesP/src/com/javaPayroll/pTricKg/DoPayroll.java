@@ -8,13 +8,23 @@ class DoPayroll {
 	
 	public static void main(String args[]) throws IOException {
 		//placing new instance of .txt file into scanner
-		Scanner empScanner = new Scanner(new File("EmployeeInfo.txt"));
-		//loop to iterate .txt file variables
-		for  (int empNum = 1; empNum <= 3; empNum++) {
-			payOneEmployee(empScanner);//passes scanner values into payOneEmp' method
+		//try will close resource .txt after execution
+		try (Scanner empScanner = new Scanner(new File("EmployeeInfo.txt"));) {			
+			
+			//loop to iterate .txt file variables
+			for  (int empNum = 1; empNum <= 3; empNum++) {
+				payOneEmployee(empScanner);//passes scanner values into payOneEmp' method
+			}
 		}
-		
 	}
+	//originally inside main.  try works better than .close()
+//		Scanner empScanner = new Scanner(new File("EmployeeInfo.txt"));
+//		//loop to iterate .txt file variables
+//		for  (int empNum = 1; empNum <= 3; empNum++) {
+//			payOneEmployee(empScanner);//passes scanner values into payOneEmp' method
+//		}
+//		//empScanner.close();  //replaced by try
+	
 	
 	static void payOneEmployee(Scanner pScanner) {
 		Employee anEmployee = new Employee();
