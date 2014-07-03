@@ -36,7 +36,7 @@ public class AndroidPlatformStrategy extends PlatformStrategy {
 	 * Latch to decrement each time a thread exits to control when the play()
 	 * method returns.
 	 */
-	private static CountDownLatch mLatch = null;
+	private static CountDownLatch mLatch = null; //??
 
 	/** Do any initialization needed to start a new game. */
 	public void begin() {
