@@ -36,13 +36,13 @@ public class AndroidPlatformStrategy extends PlatformStrategy {
 	 * Latch to decrement each time a thread exits to control when the play()
 	 * method returns.
 	 */
-	private static CountDownLatch mLatch = null;
+	private static CountDownLatch mLatch = null; //??
 
 	/** Do any initialization needed to start a new game. */
 	public void begin() {
 		/** (Re)initialize the CountDownLatch. */
 		// TODO - You fill in here.
-		mLatch = new CountDownLatch(2);
+		mLatch = new CountDownLatch(2); // was told to use NUMBER_OF_THREADS here
 	}
 
 	/** Print the outputString to the display. */
@@ -70,7 +70,7 @@ public class AndroidPlatformStrategy extends PlatformStrategy {
 		Activity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				mLatch.countDown();
+				mLatch.countDown();  // told not needed?
 			}
 		});
 	}
