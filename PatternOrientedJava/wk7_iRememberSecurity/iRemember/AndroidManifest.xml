@@ -32,7 +32,7 @@
         
         <activity android:name="edu.vuum.mocca.ui.LoginActivity">
              
-android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+android:name="android.permission.WRITE_EXTERNAL_STORAGE"> <!-- added these to activity but not both would work -->
     android:name="android.permission.READ_EXTERNAL_STORAGE"
 <intent-filter>
                 <action android:name="android.intent.action.MAIN" /> <!-- Line 35 -->
