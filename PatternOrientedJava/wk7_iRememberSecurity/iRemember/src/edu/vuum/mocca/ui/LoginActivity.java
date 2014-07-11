@@ -13,6 +13,8 @@ import android.widget.EditText;
 import edu.vuum.mocca.R;
 import edu.vuum.mocca.storage.StorageUtilities;
 
+
+// This has some fixes but not sure if done correctly
 /**
  * The activity that allows the user to provide login information.
  */
