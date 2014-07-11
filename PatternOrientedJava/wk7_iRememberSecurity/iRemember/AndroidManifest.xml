@@ -57,7 +57,7 @@ android:name="android.permission.WRITE_EXTERNAL_STORAGE"
             android:name="edu.vuum.mocca.ui.SoundRecordActivity"
             android:label="@string/title_activity_sound_record"
 
-			android:name="android.permission.RECORD_AUDIO">
+			android:name="android.permission.RECORD_AUDIO"><!-- added to activity -->
             <intent-filter> 										<!-- Line 56 -->
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
