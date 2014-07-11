@@ -30,7 +30,7 @@
             android:name="edu.vuum.mocca.ui.ListStoryActivity"
             android:label="@string/title_activity_main" />
         
-        <activity android:name="edu.vuum.mocca.ui.LoginActivity">
+        <activity android:name="edu.vuum.mocca.ui.LoginActivity"
              
 android:name="android.permission.WRITE_EXTERNAL_STORAGE"> <!-- added these to activity but not both would work -->
     android:name="android.permission.READ_EXTERNAL_STORAGE"
