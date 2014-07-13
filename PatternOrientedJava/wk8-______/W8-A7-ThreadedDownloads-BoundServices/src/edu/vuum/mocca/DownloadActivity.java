@@ -153,6 +153,7 @@ public class DownloadActivity extends DownloadBase {
 	 * This method is called when a user presses a button (see
 	 * res/layout/activity_download.xml)
 	 */
+	
 	public void runService(View view) {
 		Uri uri = Uri.parse(getUrlString());
 
@@ -162,9 +163,10 @@ public class DownloadActivity extends DownloadBase {
 		case R.id.bound_sync_button:
 			// TODO - You fill in here to use mDownloadCall to
 			// download the image & then display it.
-			//String path;
+			String path;
 			try {
-				mDownloadCall.downloadImage(uri);
+				path = mDownloadCall.downloadImage(uri);
+				displayBitmap(path);
 			} catch (RemoteException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
