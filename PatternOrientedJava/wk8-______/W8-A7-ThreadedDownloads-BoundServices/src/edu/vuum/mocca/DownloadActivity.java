@@ -162,12 +162,25 @@ public class DownloadActivity extends DownloadBase {
 		case R.id.bound_sync_button:
 			// TODO - You fill in here to use mDownloadCall to
 			// download the image & then display it.
+			String path;
+			try {
+				path = mDownloadCall.downloadImage(uri);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			break;
 
 		case R.id.bound_async_button:
 			// TODO - You fill in here to call downloadImage() on
 			// mDownloadRequest, passing in the appropriate Uri and
 			// callback.
+			try {
+				mDownloadRequest.downloadImage(uri, mDownloadCallback);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			break;
 		}
 	}
