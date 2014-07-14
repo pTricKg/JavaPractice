@@ -137,7 +137,7 @@ public class SoundRecordActivity extends Activity {
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);	// Line 139
-        mRecorder.setOutputFile(mFileName);
+        mRecorder.setOutputFile(mFileName); // will store recording to filename from onCreate
         mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
 
         try {
