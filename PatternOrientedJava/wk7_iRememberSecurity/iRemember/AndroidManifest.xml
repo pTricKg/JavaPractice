@@ -30,9 +30,7 @@
         <activity
             android:name="edu.vuum.mocca.ui.ListStoryActivity"
             android:label="@string/title_activity_main" />
-        <activity
-            android:name="edu.vuum.mocca.ui.LoginActivity">
-            
+        <activity android:name="edu.vuum.mocca.ui.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" /> <!-- Line 35 -->
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -54,8 +52,11 @@
         <!-- THIS IS THE SOUND RECORD ACTIVITY -->
         <activity
             android:name="edu.vuum.mocca.ui.SoundRecordActivity"
+            android:exported="false" 
             android:label="@string/title_activity_sound_record"
-            android:permission="android.permission.RECORD_AUDIO" > <!-- added to activity -->
+            android:permission="android.permission.RECORD_AUDIO" >
+			<!-- exported denies other apps from sending intents  -->
+            <!-- added permission to activity -->
             <intent-filter> <!-- Line 56 -->
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
