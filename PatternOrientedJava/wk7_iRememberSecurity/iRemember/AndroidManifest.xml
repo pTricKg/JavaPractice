@@ -57,6 +57,7 @@
             android:permission="android.permission.RECORD_AUDIO" >
 			<!-- exported denies other apps from sending intents  -->
             <!-- added permission to activity -->
+            <!-- without explicitly adding export tag, any intent filter in activity will default to true -->
             <intent-filter> <!-- Line 56 -->
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
