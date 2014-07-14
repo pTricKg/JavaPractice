@@ -229,7 +229,7 @@ public class SoundRecordActivity extends Activity {
         super.onCreate(icicle);
         
         //Get the filename to store audio data from the intent used to start this activity
-        mFileName = getIntent().getStringExtra("FILENAME");
+        mFileName = getIntent().getStringExtra("FILENAME"); // Security issue: Later stores recording to given filename
         
         //Add our custom buttons to a linear layout
         LinearLayout ll = new LinearLayout(this);
