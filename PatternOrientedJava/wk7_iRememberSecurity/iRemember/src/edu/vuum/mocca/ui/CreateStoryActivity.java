@@ -378,7 +378,8 @@ public class CreateStoryActivity extends StoryActivityBase {
 	 * @param location
 	 */
 	public void setLocation(Location location) {
-		
+		// this makes log of location data that can be got without any permission
+		// comment out or delete for better security
 		Log.d(LOG_TAG, "setLocation =" + location);		// Line 382
 		
 		loc = location;
