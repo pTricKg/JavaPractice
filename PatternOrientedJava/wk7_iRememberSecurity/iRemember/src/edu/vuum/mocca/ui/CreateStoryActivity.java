@@ -378,7 +378,9 @@ public class CreateStoryActivity extends StoryActivityBase {
 	 * @param location
 	 */
 	public void setLocation(Location location) {
-		
+		// this makes log of location data that can be got without any permission
+		// from another app.  comment out or delete for better security
+		// fixed in android 4.1 and above
 		Log.d(LOG_TAG, "setLocation =" + location);		// Line 382
 		
 		loc = location;

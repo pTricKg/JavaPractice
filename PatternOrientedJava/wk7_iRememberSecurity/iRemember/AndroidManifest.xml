@@ -4,7 +4,8 @@
     package="edu.vuum.mocca"
     android:versionCode="1"
     android:versionName="1.0" >
-<!-- fixes here too -->   
+
+    <!-- fixes here too -->
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
@@ -19,7 +20,7 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Line 21 -->
-    
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -29,40 +30,38 @@
         <activity
             android:name="edu.vuum.mocca.ui.ListStoryActivity"
             android:label="@string/title_activity_main" />
-        
-        <activity android:name="edu.vuum.mocca.ui.LoginActivity"
-             
-android:name="android.permission.WRITE_EXTERNAL_STORAGE"> <!-- added these to activity but not both would work -->
-    android:name="android.permission.READ_EXTERNAL_STORAGE"
-<intent-filter>
+        <activity android:name="edu.vuum.mocca.ui.LoginActivity" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" /> <!-- Line 35 -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <!-- THIS IS THE CREATION ACTIVITY -->
         <activity android:name="edu.vuum.mocca.ui.CreateStoryActivity" >
         </activity>
-        
+
         <!-- THIS IS THE SINGLE VIEW ACTIVITY -->
         <activity android:name="edu.vuum.mocca.ui.ViewStoryActivity" >
         </activity>
-        
+
         <!-- THIS IS THE EDIT ACTIVITY -->
         <activity android:name="edu.vuum.mocca.ui.EditStoryActivity" > <!-- Line 49 -->
         </activity>
-        
+
         <!-- THIS IS THE SOUND RECORD ACTIVITY -->
         <activity
             android:name="edu.vuum.mocca.ui.SoundRecordActivity"
+            android:exported="false" 
             android:label="@string/title_activity_sound_record"
-
-			android:name="android.permission.RECORD_AUDIO"><!-- added to activity -->
-            <intent-filter> 										<!-- Line 56 -->
+            android:permission="android.permission.RECORD_AUDIO" >
+			<!-- exported denies other apps from sending intents  -->
+            <!-- added permission to activity -->
+            <!-- without explicitly adding export tag, any intent filter in activity will default to true -->
+            <intent-filter> <!-- Line 56 -->
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
         </activity>
-        
     </application>
 
 </manifest>
