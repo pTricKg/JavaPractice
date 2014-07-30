@@ -1,8 +1,6 @@
 /StdDraw.java
 /BouncingBall.java
 /.gitignore
-/com
-/usingTempExt.class
 /City.class
 /EnglishSpeakingWorld.class
 /EnglishSpeakingWorld2.class
@@ -33,3 +31,5 @@
 /TrackPopulation3.class
 /TrackPopulation4.class
 /UsingTemperature.class
+/com/
+/usingTempExt.class
