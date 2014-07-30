@@ -5,6 +5,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+/**
+ * @author pTricKg
+ *
+ */
+
+// A Simple program that opens window and displays saying which
+// can be moved around via mouse
 public class JavaPlay {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Your mind is like a diamond!");
