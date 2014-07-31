@@ -19,6 +19,7 @@ public class JavaPlay {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setBackground(Color.BLACK);
 		frame.getContentPane().setForeground(Color.BLUE);
+		frame.add(new JLabel(new ImageIcon("stTrek.png")));
 		frame.setSize(400, 400);
 		frame.setVisible(true);
 
@@ -43,6 +44,7 @@ class JavaComponent extends JComponent implements MouseMotionListener {
 
 	public void paintComponent(Graphics g) {
 		g.drawString(theSaying, sayX, sayY);
+		
 	}
 
 	public void mouseDragged(MouseEvent e) {
