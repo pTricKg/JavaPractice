@@ -18,6 +18,7 @@ public class JavaPlay {
 		frame.add(new JavaComponent("Hi there! Click and move me around, please!"));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setBackground(Color.BLACK);
+		frame.getContentPane().setForeground(Color.BLUE);
 		frame.setSize(400, 400);
 		frame.setVisible(true);
 
