@@ -15,8 +15,9 @@ import javax.swing.*;
 public class JavaPlay {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Your mind is like a diamond!");
-		frame.add(new JavaComponent("Hi there!"));
+		frame.add(new JavaComponent("Hi there! Click and move me around, please!"));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setBackground(Color.BLACK);
 		frame.setSize(400, 400);
 		frame.setVisible(true);
 
