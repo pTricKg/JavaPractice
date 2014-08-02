@@ -85,6 +85,6 @@ class JavaComponentTwo extends JComponent implements MouseMotionListener,
 	}
 	
 	synchronized private Color currentColor() {
-		return someColor[colorIndex];
+		return someColor[colorIndex];  // pick from color array set up in parent class
 	}
 }
