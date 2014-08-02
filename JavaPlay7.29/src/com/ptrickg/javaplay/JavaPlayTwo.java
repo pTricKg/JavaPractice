@@ -78,6 +78,7 @@ class JavaComponentTwo extends JComponent implements MouseMotionListener,
 	}
 	
 	synchronized private void changeColor() {
+		// color index change
 		if (++colorIndex == someColor.length)
 			colorIndex = 0;
 		setForeground(currentColor()); // put new color on
