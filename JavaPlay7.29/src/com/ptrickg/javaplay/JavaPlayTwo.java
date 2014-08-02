@@ -15,7 +15,7 @@ public class JavaPlayTwo {
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Your mind is like a diamond!");
-		frame.add(new JavaComponent(
+		frame.add(new JavaComponentTwo(
 				"Hi there! Click and move me around, please!"));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setBackground(Color.BLACK);
