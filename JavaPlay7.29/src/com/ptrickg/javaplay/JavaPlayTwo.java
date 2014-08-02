@@ -72,7 +72,7 @@ class JavaComponentTwo extends JComponent implements MouseMotionListener,
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		// check for button press
 		if(e.getSource() == mButton) changeColor();
 
 	}
