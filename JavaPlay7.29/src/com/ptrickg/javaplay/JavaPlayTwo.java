@@ -29,7 +29,7 @@ public class JavaPlayTwo {
 
 // construct JavaComponent
 class JavaComponentTwo extends JComponent implements MouseMotionListener,
-		ActionListener {  // impplement additional ActionListener
+		ActionListener {  // implement additional ActionListener
 
 	/**
 	 * 
