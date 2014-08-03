@@ -37,9 +37,20 @@ class JavaComponentTres extends JComponent implements MouseMotionListener, Actio
 	static Color[] someColor = {
 		Color.black, Color.blue, Color.cyan, Color.green, Color.gray
 	};
+	
+	// new
+	boolean mBlink;
 
-	public JavaComponentTres(String string) {
-		// TODO Auto-generated constructor stub
+	public JavaComponentTres(String message) {
+		theSaying = message;
+		mButton = new JButton("Push me to change Color");
+		setLayout(new FlowLayout());
+		add(mButton);
+		mButton.addActionListener(this);
+		addMouseMotionListener(this);
+		Thread t = new Thread(this);
+		t.start();
+		
 	}
 
 	@Override
