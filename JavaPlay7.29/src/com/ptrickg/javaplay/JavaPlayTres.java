@@ -3,6 +3,7 @@ package com.ptrickg.javaplay;
 //first we import
 import java.awt.*;
 import java.awt.event.*;
+
 import javax.swing.*;
 
 /**
@@ -20,4 +21,38 @@ public class JavaPlayTres {
 		frame.setSize(500,500);
 		frame.setVisible(true);
 	}
+}
+
+@SuppressWarnings("serial")
+class JavaComponentTres extends JComponent implements MouseMotionListener, ActionListener,
+	Runnable {
+
+	public JavaComponentTres(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
