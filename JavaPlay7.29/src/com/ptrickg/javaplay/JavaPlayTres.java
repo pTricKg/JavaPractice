@@ -55,7 +55,13 @@ class JavaComponentTres extends JComponent implements MouseMotionListener, Actio
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		try {
+			while(true) {
+				mBlink = !mBlink; // toggle state
+				repaint(); // show change
+				Thread.sleep(300);
+			}
+		}catch (InterruptedException ie) {	}
 		
 	}
 
