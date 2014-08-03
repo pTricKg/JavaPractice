@@ -26,6 +26,17 @@ public class JavaPlayTres {
 @SuppressWarnings("serial")
 class JavaComponentTres extends JComponent implements MouseMotionListener, ActionListener,
 	Runnable {
+	
+	String theSaying;
+	int messageX = 125, messageY = 95;  // coords
+	
+	JButton mButton;
+	int colorIndex;
+	
+	// array of colors
+	static Color[] someColor = {
+		Color.black, Color.blue, Color.cyan, Color.green, Color.gray
+	};
 
 	public JavaComponentTres(String string) {
 		// TODO Auto-generated constructor stub
