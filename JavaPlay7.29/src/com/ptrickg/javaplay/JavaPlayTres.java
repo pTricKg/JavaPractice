@@ -52,6 +52,11 @@ class JavaComponentTres extends JComponent implements MouseMotionListener, Actio
 		t.start();
 		
 	}
+	
+	public void paintComponent(Graphics g) {
+		g.setColor(mBlink ? getBackground() : currentColor());
+		g.drawString(theSaying, messageX, messageY);
+	}
 
 	@Override
 	public void run() {
