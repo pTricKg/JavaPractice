@@ -73,6 +73,8 @@ class JavaComponentTres extends JComponent implements MouseMotionListener, Actio
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		if (e.getSource() == mButton)
+			changeColor();
 		
 	}
 
