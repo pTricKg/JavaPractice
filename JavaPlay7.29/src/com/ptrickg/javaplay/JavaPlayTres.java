@@ -44,7 +44,7 @@ class JavaComponentTres extends JComponent implements MouseMotionListener, Actio
 
 	public JavaComponentTres(String message) {
 		theSaying = message;
-		mButton = new JButton("Push me to change Color");
+		mButton = new JButton("Push me to change text Color");
 		setLayout(new FlowLayout());
 		add(mButton);
 		mButton.addActionListener(this);
