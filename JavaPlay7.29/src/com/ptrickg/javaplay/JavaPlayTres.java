@@ -11,7 +11,8 @@ import javax.swing.*;
 *
 */
 
-
+// display window with blinking text
+// color can be changed by button press
 public class JavaPlayTres {
 
 	public static void main(String[] args) {
