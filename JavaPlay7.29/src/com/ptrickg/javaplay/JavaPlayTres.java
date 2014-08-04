@@ -79,6 +79,9 @@ class JavaComponentTres extends JComponent implements MouseMotionListener, Actio
 	@Override
 	public void mouseDragged(MouseEvent e) {
 		// TODO Auto-generated method stub
+		messageX = e.getX();
+		messageY = e.getY();
+		repaint();
 		
 	}
 
