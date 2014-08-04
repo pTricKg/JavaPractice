@@ -100,4 +100,8 @@ class JavaComponentTres extends JComponent implements MouseMotionListener, Actio
 		repaint();
 	}
 	
+	synchronized private Color currentColor() {
+		return someColor[colorIndex];
+	}
+	
 }
