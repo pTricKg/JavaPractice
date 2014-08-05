@@ -1,9 +1,5 @@
 /StdDraw.java
 /BouncingBall.java
-/.gitignore
-<<<<<<< HEAD
-/com
-=======
 /City.class
 /EnglishSpeakingWorld.class
 /EnglishSpeakingWorld2.class
@@ -18,7 +14,6 @@
 /NumberTooLargeException.class
 /OutOfRangeException.class
 /Room.class
->>>>>>> f02c53d40835cffded5eb66dd688213635ea3f96
 /ShowFrame.class
 /ShowGameFrame.class
 /ShowRooms.class
@@ -35,23 +30,5 @@
 /TrackPopulation3.class
 /TrackPopulation4.class
 /UsingTemperature.class
-<<<<<<< HEAD
+/com
 /usingTempExt.class
-/City.class
-/EnglishSpeakingWorld.class
-/EnglishSpeakingWorld2.class
-/GameFrame.class
-/GetGoing.class
-/GetGoing2.class
-/HotelMotel.class
-/HotelMotel2.class
-/HotelMotelOpen.class
-/Inventory.class
-/InventoryLoop.class
-/NumberTooLargeException.class
-/OutOfRangeException.class
-/Room.class
-=======
-/com/
-/usingTempExt.class
->>>>>>> f02c53d40835cffded5eb66dd688213635ea3f96
