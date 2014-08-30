@@ -7,7 +7,7 @@ import javax.swing.*;
 
 /**
  * @author pTricKg
- * 
+ * what
  *
  */
 
