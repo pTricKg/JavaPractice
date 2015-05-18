@@ -1,14 +1,38 @@
 import java.util.Random;
 import java.util.Scanner;
 
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
 public final class RandomNum {
   /**
 	Generate Random Number from User Input
 	for max number and sample frequency.
 */
+
+  private static void gui() {
+	// Adding JFrame
+	JFrame frame = new JFrame("Random Numbers");
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	JLabel label = new JLabel("");
+	label.setPreferredSize(new Dimension(400, 300));
+	frame.getContentPane().add(label, BorderLayout.CENTER);
+
+	frame.pack();
+	frame.setVisible(true);
+	
+
+}
   public static final void main(String... aArgs){
     log("Generating random numbers from 0 to your input.");
 
+	javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                gui();
+            }
+        });
 	Scanner userIn = new Scanner(System.in);
 
 	String num;
@@ -30,6 +54,8 @@ public final class RandomNum {
     }
     
     log("Done.");
+
+	
   }
   
   private static void log(String aMessage){
