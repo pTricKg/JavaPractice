@@ -7,7 +7,7 @@ public final class RandomNum {
 	for max number and sample frequency.
 */
   public static final void main(String... aArgs){
-    log("Generating random numbers from 0 > your input.");
+    log("Generating random numbers from 0 to your input.");
 
 	Scanner userIn = new Scanner(System.in);
 
