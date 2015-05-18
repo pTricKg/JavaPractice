@@ -11,6 +11,8 @@ public final class RandomNum {
 	for max number and sample frequency.
 */
 
+JTextField txtF = new JTextField("text");
+
   private static void gui() {
 	// Adding JFrame
 	JFrame frame = new JFrame("Random Numbers");
@@ -19,6 +21,8 @@ public final class RandomNum {
 	JLabel label = new JLabel("");
 	label.setPreferredSize(new Dimension(400, 300));
 	frame.getContentPane().add(label, BorderLayout.CENTER);
+
+	//add(txtF);
 
 	frame.pack();
 	frame.setVisible(true);
@@ -33,6 +37,8 @@ public final class RandomNum {
                 gui();
             }
         });
+
+	//String text = txtF.getText();
 	Scanner userIn = new Scanner(System.in);
 
 	String num;
