@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 public class authenticate {
 	public static void main(String args[]) {
+		// create pop up dialogue
 		String username = JOptionPane.showInputDialog("Username");
 		String password = JOptionPane.showInputDialog("Password");
 		
