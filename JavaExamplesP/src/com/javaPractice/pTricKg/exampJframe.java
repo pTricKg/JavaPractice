@@ -2,7 +2,8 @@ package com.javaPractice.pTricKg;
 
 
 import javax.swing.JFrame;
-
+/* pop up window eg 
+ * nothing there */
 
 public class exampJframe {
 	public static void main(String args[]) {
