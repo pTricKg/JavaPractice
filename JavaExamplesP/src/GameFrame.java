@@ -9,9 +9,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-class GameFrame extends JFrame implements ActionListener {
+public final class GameFrame extends JFrame implements ActionListener {
    private static final long serialVersionUID = 1L;
-
+  
    int randomNumber = new Random().nextInt(10) + 1;
    int numGuesses = 0;
    
@@ -19,7 +19,7 @@ class GameFrame extends JFrame implements ActionListener {
    JButton button = new JButton("Guess");
    JLabel label = new JLabel(numGuesses + " guesses");
       
-   public GameFrame() {
+   public class GameFrame() {
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setTitle("Guess the Number");
       setLayout(new FlowLayout());
@@ -49,4 +49,5 @@ class GameFrame extends JFrame implements ActionListener {
           (numGuesses == 1) ? " guess" : " guesses";
       label.setText(numGuesses + guessWord);
    }
+
 }
