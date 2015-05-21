@@ -6,7 +6,9 @@ import static java.lang.System.out;
 
 public class doWhileLoop {
 	public static void main(String args[]) {
+		// create file
 		File books = new File("badBooks.txt");
+		// scan for user input
 		Scanner keyboard = new Scanner(System.in);
 		char reply;
 		
