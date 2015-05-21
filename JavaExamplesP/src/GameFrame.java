@@ -3,13 +3,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public final class GameFrame extends JFrame implements ActionListener {
+public class GameFrame extends JFrame implements ActionListener {
    private static final long serialVersionUID = 1L;
   
    int randomNumber = new Random().nextInt(10) + 1;
@@ -19,7 +18,7 @@ public final class GameFrame extends JFrame implements ActionListener {
    JButton button = new JButton("Guess");
    JLabel label = new JLabel(numGuesses + " guesses");
       
-   public class GameFrame() {
+   public GameFrame() {
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setTitle("Guess the Number");
       setLayout(new FlowLayout());
