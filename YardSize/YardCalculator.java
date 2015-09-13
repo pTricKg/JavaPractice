@@ -30,7 +30,7 @@ public class YardCalculator
     public double perimeter()
     {
         double perimeter = (length * 2) + (width * 2);
-        System.out.println(perimeter);
+        //System.out.println(perimeter);
         return perimeter;
     }
 
@@ -41,7 +41,7 @@ public class YardCalculator
     public double area()
     {
         double area = length * width;
-        System.out.println(area);
+        //System.out.println(area);
         return area;
     }
 
@@ -52,7 +52,7 @@ public class YardCalculator
     public double diagonal()
     {
         double diagonal = Math.sqrt(Math.pow(width,2) + Math.pow(length,2));
-        System.out.println(diagonal);
+        //System.out.println(diagonal);
         return diagonal;
     }
 
