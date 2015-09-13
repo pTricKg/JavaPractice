@@ -23,8 +23,9 @@ public class YardCalculatorTester
         double diagonal = calculator.diagonal();
 
         System.out.println("Perimeter: " + perimeter);
-        System.out.println("Diagonal: " + diagonal);
         System.out.println("Area: " + area);
+        System.out.println("Diagonal: " + diagonal);
+        
 
         
 
