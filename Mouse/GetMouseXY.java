@@ -2,7 +2,7 @@
 /**
  * Write a description of class XYMouse here.
  * 
- * @author (your name) 
+ * @author pTricKg
  * @version (a version number or a date)
  */
 
@@ -25,20 +25,7 @@ public class GetMouseXY extends JPanel
             y = (int) b.getY();
             System.out.println("x" + x  + ":" + "y" + y);
 
-            JFrame frame = new JFrame();
-            JPanel panel = new JPanel();
-            frame.add(panel);
-            panel.addMouseListener(new MouseAdapter() {// empty implementation of all
-                    // MouseListener`s methods
-                    @Override //I override only one method for presentation
-                    public void mousePressed(MouseEvent e) {
-                        System.out.println(e.getX() + "," + e.getY());
-                    }
-                });
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(200, 200);
-            frame.setVisible(true);
-
+            
             try
             {
                 Thread.sleep(1000);
