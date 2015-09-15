@@ -7,8 +7,10 @@
  */
 
 import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
 
-public class GetMouseXY
+public class GetMouseXY extends JPanel
 {
     public static void main(String[] args)
     {
@@ -23,17 +25,31 @@ public class GetMouseXY
             y = (int) b.getY();
             System.out.println("x" + x  + ":" + "y" + y);
 
-        try
-        {
-            Thread.sleep(1000);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
-        if (x < 1 && y < 1) {
-            Thread.currentThread().interrupted();
+            JFrame frame = new JFrame();
+            JPanel panel = new JPanel();
+            frame.add(panel);
+            panel.addMouseListener(new MouseAdapter() {// empty implementation of all
+                    // MouseListener`s methods
+                    @Override //I override only one method for presentation
+                    public void mousePressed(MouseEvent e) {
+                        System.out.println(e.getX() + "," + e.getY());
+                    }
+                });
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setSize(200, 200);
+            frame.setVisible(true);
+
+            try
+            {
+                Thread.sleep(1000);
+            }
+            catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
+            if (x < 1 && y < 1) {
+                Thread.currentThread().interrupted();
+            }
         }
     }
-}
 }
