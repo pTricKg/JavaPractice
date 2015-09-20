@@ -26,4 +26,5 @@ public final class RandomNum {
   private static void log(String aMessage){
     System.out.println(aMessage);
   }
+	
 }
