@@ -15,11 +15,11 @@ public class Word
         String v = " is vowel";
 
         Scanner word = new Scanner(System.in);
-        System.out.print("Give me a word and i'll tell you if its a vowel: ");
+        System.out.print("Give me a word and \ni'll tell you if each letter is a vowel  \nor not: ");
         String user = word.nextLine();
 
         System.out.println("You input: " + user);
-        user = user.toLowerCase();//.replaceAll("\\s","");
+        user = user.toLowerCase().replaceAll("\\s","");
         System.out.println(user);
 
         int l;
