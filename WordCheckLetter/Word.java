@@ -18,14 +18,14 @@ public class Word
         System.out.print("Give me a word and \ni'll tell you if each letter is a vowel  \nor not: ");
         String user = word.nextLine();
 
-        System.out.println("You input: " + user);
+        System.out.println("\nYou input: " + user);
         user = user.toLowerCase().replaceAll("\\s","");
         System.out.println(user);
 
         int l;
         for (l = 0; l < user.length(); l++)
         {
-            System.out.println("Letter of your word at index " + l);
+            System.out.println("\nLetter of your word at index " + l);
             if (user.substring(l, l + 1).equals("a"))
             {
                 System.out.println(user.substring(l, l + 1) + v);
