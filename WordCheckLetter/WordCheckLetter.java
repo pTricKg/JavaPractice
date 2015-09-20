@@ -28,6 +28,8 @@ public class WordCheckLetter
         for (l = 0; l < user.length(); l++)
         {
             System.out.println("\nLetter of your word at index " + l);
+            
+            // can use "aeiou".contains(letter) after String letter = user.substring(l, l + 1) in if()
             if (user.substring(l, l + 1).equals("a"))
             {
                 System.out.println(user.substring(l, l + 1) + v);
