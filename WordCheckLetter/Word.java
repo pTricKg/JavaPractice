@@ -28,33 +28,33 @@ public class Word
             System.out.println("Letter of your word at index " + l);
             if (user.substring(l, l + 1).equals("a"))
             {
-                System.out.print(user.substring(l, l + 1));
-                System.out.println(v);
+                System.out.println(user.substring(l, l + 1) + v);
+                //System.out.println(v);
             }
             else if (user.substring(l, l + 1).equals("e"))
             {
-                System.out.print(user.substring(l, l + 1));
-                System.out.println(v);
+                System.out.println(user.substring(l, l + 1) + v);
+                //System.out.println(v);
             }
             else if (user.substring(l, l + 1).equals("i"))
             {
-                System.out.print(user.substring(l, l + 1));
-                System.out.println(v);
+                System.out.println(user.substring(l, l + 1) + v);
+                //System.out.println(v);
             }
             else if (user.substring(l, l + 1).equals("o"))
             {
-                System.out.print(user.substring(l, l + 1));
-                System.out.println(v);
+                System.out.println(user.substring(l, l + 1) + v);
+                //System.out.println(v);
             }
             else if (user.substring(l, l + 1).equals("u"))
             {
-                System.out.print(user.substring(l, l + 1));
-                System.out.println(v);
+                System.out.println(user.substring(l, l + 1) + v);
+                //System.out.println(v);
             }
             else 
             {
-                System.out.print(user.substring(l, l + 1));
-                System.out.println(" is consonant");
+                System.out.println(user.substring(l, l + 1) + " is consonant");
+                //System.out.println(" is consonant");
             }
         }
 
