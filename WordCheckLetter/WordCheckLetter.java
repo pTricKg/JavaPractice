@@ -23,6 +23,8 @@ public class WordCheckLetter
         System.out.println(user);
 
         int l;
+        int cCount = 0;
+        int vCount = 0;
         for (l = 0; l < user.length(); l++)
         {
             System.out.println("\nLetter of your word at index " + l);
@@ -30,32 +32,39 @@ public class WordCheckLetter
             {
                 System.out.println(user.substring(l, l + 1) + v);
                 //System.out.println(v);
+                vCount++;
             }
             else if (user.substring(l, l + 1).equals("e"))
             {
                 System.out.println(user.substring(l, l + 1) + v);
                 //System.out.println(v);
+                vCount++;
             }
             else if (user.substring(l, l + 1).equals("i"))
             {
                 System.out.println(user.substring(l, l + 1) + v);
                 //System.out.println(v);
+                vCount++;
             }
             else if (user.substring(l, l + 1).equals("o"))
             {
                 System.out.println(user.substring(l, l + 1) + v);
                 //System.out.println(v);
+                vCount++;
             }
             else if (user.substring(l, l + 1).equals("u"))
             {
                 System.out.println(user.substring(l, l + 1) + v);
                 //System.out.println(v);
+                vCount++;
             }
             else 
             {
                 System.out.println(user.substring(l, l + 1) + " is consonant");
                 //System.out.println(" is consonant");
+                cCount++;
             }
+
         }
 
         //         System.out.println(user.isVowel(0));
@@ -63,7 +72,8 @@ public class WordCheckLetter
         //         System.out.println(user.isVowel(2));
         //         System.out.println(user.isVowel(3));
         //         System.out.println(user.isVowel(4));
+        System.out.println("\nNumber of vowels: " + vCount);
+        System.out.println("Number of consonants: " + cCount);
     }
 
-    
 }
