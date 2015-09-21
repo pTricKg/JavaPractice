@@ -24,19 +24,17 @@ public class PluralizeWord
         {
             return letters.substring(0, last) + "ies";
         }
-        else if (is(last, "o") || is(last, "s")) // plural o.s,sh,ch
+        else if (is(last, "o") || is(last, "s")
+            || is(last, "h") && is(last - 1, "s") 
+            || is(last, "h") && is(last - 1, "c")) // plural o.s,sh,ch
         {
             return letters + "es";
         }
-        else if (is(last, "h"))
+        else
         {
-            if (is(letters.length() - 2, "s") || is(letters.length() - 2, "c"))
-            {
-                return letters + "es";
-            }
-            
+            return letters + "s";
         }
-        return letters + "s";
+
     }
 
     /**
@@ -46,7 +44,7 @@ public class PluralizeWord
      */
     public boolean isVowel(int i)
     {
-        return is(i, "a")
+    return is(i, "a")
         || is(i, "e")
         || is(i, "i")
         || is(i, "o")
@@ -62,7 +60,7 @@ public class PluralizeWord
     {
         return !isVowel(i);
     }
-
+    
     /**
      * Checks what letter is in position i
      * @return true when the the letter of letters is the given letter.
