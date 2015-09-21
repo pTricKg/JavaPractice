@@ -20,13 +20,9 @@ public class PluralizeWord
         // or add an s.
         int last = letters.length() - 1; //get last letter
 
-        if (is(last, "y")) //plural y 
+        if (is(last, "y") && isConsonant(last - 1))//plural y with preceding consonant
         {
-            if (isConsonant(letters.length() - 2)) // with consonant
-            {
-                return letters.substring(0, last) + "ies";
-            }
-            
+            return letters.substring(0, last) + "ies";
         }
         else if (is(last, "o") || is(last, "s")) // plural o.s,sh,ch
         {
