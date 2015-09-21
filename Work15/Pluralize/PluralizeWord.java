@@ -26,10 +26,7 @@ public class PluralizeWord
             {
                 return letters.substring(0, last) + "ies";
             }
-            else // with vowel
-            {
-                return letters + "s";
-            }
+            
         }
         else if (is(last, "o") || is(last, "s")) // plural o.s,sh,ch
         {
@@ -41,10 +38,7 @@ public class PluralizeWord
             {
                 return letters + "es";
             }
-            else
-            {
-                return letters + "s";
-            }
+            
         }
         return letters + "s";
     }
