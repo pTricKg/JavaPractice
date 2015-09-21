@@ -9,15 +9,36 @@ public class PluralizeWordUser
 {
     static String user = "";
     
+    public PluralizeWordUser(String user) 
+    {
+       this.user = user;
+    }
+    
     public static void main(String[] args)
     {
+        boolean value = false;
         Scanner word = new Scanner(System.in);
-        System.out.print("Enter word: ");
-        String user = word.next().toLowerCase();
-        
-        System.out.println(new PluralizeWord(user).getPluralForm());
-         
+        while (!value)
+        {
+            System.out.print("Enter word to pluralize or type quit now to stop: ");
+            user = word.next().toLowerCase();
+            
+            if (user.length() >= 0)
+            {
+                if (user.equals("quit"))
+                {
+                    value = true;
+                }
+                else
+                {
+                    System.out.println(new PluralizeWordUser(user).getPluralForm());
+                }
+            }
+            
+            
+        }
     }
+  
     
     public String getPluralForm()
     {
