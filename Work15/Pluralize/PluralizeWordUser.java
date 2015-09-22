@@ -34,7 +34,10 @@ public class PluralizeWordUser
                     System.out.println(new PluralizeWordUser(user).getPluralForm());
                 }
             }
-            
+            else if (word == null) 
+            {
+                System.out.println("Please enter word to pluralize");
+            }
             
         }
     }
