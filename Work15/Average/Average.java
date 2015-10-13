@@ -9,8 +9,9 @@ public class Average
         int count = 0;
         double sum = 0;
         double num;
+        boolean stop = false;
 
-        do
+        while(!stop)
         {
             System.out.print("Enter values to average then 0 to quit: ");
             num = in.nextDouble();
@@ -19,9 +20,12 @@ public class Average
                 count = count + 1;
                 sum = num + sum;
             }
+            else
+            {
+                stop = true;
+            }
         }
-        while (num > 0);
-        
+               
         double average = sum / count;
         System.out.printf("Average: %.2f\n", average);
     }
