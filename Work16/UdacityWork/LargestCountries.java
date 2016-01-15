@@ -16,15 +16,16 @@ public class LargestCountries
         double population = in.nextDouble(); // find next double from input
         double largest = population; // holder for largest population found
 
-        String countryName = ""; // initializing string for country name when found
+        String countryName = country; // initializing string for country name when found
         
         while (in.hasNext()) // looking through file while it has text to read
         {
-            countryName = in.next(); // looking at strings and assigning
+            country = in.next(); // looking at strings and assigning
             population = in.nextDouble();  // looking at doubles and assigning
             if (population > largest) // check for largest
             {
                 largest = population; // assigning largest to holder
+                countryName = country; // assign country to holder
             }
         }
         System.out.println("The country with the largest population is: " + countryName);
