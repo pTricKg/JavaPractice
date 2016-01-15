@@ -8,28 +8,23 @@ public class LargestCountries
 {
     public static void main(String[] args) throws FileNotFoundException
     {
-        String filename = "population.txt";
-        File inputFile = new File(filename);
-        Scanner in = new Scanner(inputFile);
+        String filename = "population.txt"; // looking at..
+        File inputFile = new File(filename); // creating file object
+        Scanner in = new Scanner(inputFile); // scanning file object given
 
-        String country = in.next();
-        double population = in.nextDouble();
-        double largest = population;
+        String country = in.next(); // find next string from input
+        double population = in.nextDouble(); // find next double from input
+        double largest = population; // holder for largest population found
 
-        // TODO: Print the population and name of the country with largest population
-
-        // HINT: What else do you need to remember?
-        // What variable(s) should you add so you can
-        // print the population and the country name at the end?
-        String countryName = "";
+        String countryName = ""; // initializing string for country name when found
         
-        while (in.hasNext())
+        while (in.hasNext()) // looking through file while it has text to read
         {
-            countryName = in.next();
-            population = in.nextDouble();
-            if (population > largest)
+            countryName = in.next(); // looking at strings and assigning
+            population = in.nextDouble();  // looking at doubles and assigning
+            if (population > largest) // check for largest
             {
-                largest = population;
+                largest = population; // assigning largest to holder
             }
         }
         System.out.println("The country with the largest population is: " + countryName);
