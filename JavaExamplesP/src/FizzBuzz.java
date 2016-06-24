@@ -25,22 +25,33 @@
 public class FizzBuzz {
 	
 	public static void main (String args[]) {
-		int num = 0;
+		int num = 1;
+		int fizzCount = 0;
+		int buzzCount = 0;
+		int fizzBuzzCount = 0;
 		while(num <= 100){
 			if(num % 3 == 0 && num % 5 == 0){
-				System.out.println("FizzBuzz");
+				fizzBuzzCount += 1;
+				System.out.println(num + "= FizzBuzz");
 			}
 			else if(num % 3 == 0){
-				System.out.println("Fizz");
+				fizzCount += 1;
+				System.out.println(num + "= Fizz");
 			}
 			else if(num % 5  == 0){
-				System.out.println("Buzz");
+				buzzCount += 1;
+				System.out.println(num + "= Buzz");
 			}
 			else{
 				System.out.println(num);
 			}
 			num += 1;
 		}
+		System.out.println("End of Line");
+		System.out.println("Fizz Count: " + fizzCount);
+		System.out.println("Buzz Count: " + fizzBuzzCount);
+		System.out.println("Fizz Buzz Count: " + fizzCount);
 	}
+	
 }
 
