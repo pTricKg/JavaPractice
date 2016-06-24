@@ -49,8 +49,8 @@ public class FizzBuzz {
 		}
 		System.out.println("End of Line");
 		System.out.println("Fizz Count: " + fizzCount);
-		System.out.println("Buzz Count: " + fizzBuzzCount);
-		System.out.println("Fizz Buzz Count: " + fizzCount);
+		System.out.println("Buzz Count: " + buzzCount);
+		System.out.println("Fizz Buzz Count: " + fizzBuzzCount);
 	}
 	
 }
