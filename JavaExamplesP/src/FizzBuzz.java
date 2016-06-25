@@ -21,15 +21,17 @@
  * 
  */
 
-
 public class FizzBuzz {
 	
 	public static void main (String args[]) {
+		
 		int num = 1;
 		int fizzCount = 0;
 		int buzzCount = 0;
 		int fizzBuzzCount = 0;
+		
 		while(num <= 100){
+			
 			if(num % 3 == 0 && num % 5 == 0){
 				fizzBuzzCount += 1;
 				System.out.println(num + "= FizzBuzz");
@@ -38,7 +40,7 @@ public class FizzBuzz {
 				fizzCount += 1;
 				System.out.println(num + "= Fizz");
 			}
-			else if(num % 5  == 0){
+			else if(num % 5 == 0){
 				buzzCount += 1;
 				System.out.println(num + "= Buzz");
 			}
@@ -47,7 +49,8 @@ public class FizzBuzz {
 			}
 			num += 1;
 		}
-		System.out.println("End of Line");
+		
+		System.out.println("End of Line\n");
 		System.out.println("Fizz Count: " + fizzCount);
 		System.out.println("Buzz Count: " + buzzCount);
 		System.out.println("Fizz Buzz Count: " + fizzBuzzCount);
