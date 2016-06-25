@@ -1,5 +1,6 @@
+import static java.lang.System.out;;
 /*
- * FizzBuzz.java
+ * * FizzBuzz.java
  * 
  * Copyright 2016 pTricKg <ptrickg@ptrickg-MP061>
  * 
@@ -34,26 +35,26 @@ public class FizzBuzz {
 			
 			if(num % 3 == 0 && num % 5 == 0){
 				fizzBuzzCount += 1;
-				System.out.println(num + "= FizzBuzz");
+				out.println(num + "= FizzBuzz");
 			}
 			else if(num % 3 == 0){
 				fizzCount += 1;
-				System.out.println(num + "= Fizz");
+				out.println(num + "= Fizz");
 			}
 			else if(num % 5 == 0){
 				buzzCount += 1;
-				System.out.println(num + "= Buzz");
+				out.println(num + "= Buzz");
 			}
 			else{
-				System.out.println(num);
+				out.println(num);
 			}
 			num += 1;
 		}
 		
-		System.out.println("End of Line\n");
-		System.out.println("Fizz Count: " + fizzCount);
-		System.out.println("Buzz Count: " + buzzCount);
-		System.out.println("Fizz Buzz Count: " + fizzBuzzCount);
+		out.println("End of Line\n");
+		out.println("Fizz Count: " + fizzCount);
+		out.println("Buzz Count: " + buzzCount);
+		out.println("Fizz Buzz Count: " + fizzBuzzCount);
 	}
 	
 }
