@@ -7,6 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.JPanel;
+import java.awt.Dimension;
 
 public class GameFrame extends JFrame implements ActionListener {
    private static final long serialVersionUID = 1L;
@@ -14,13 +16,18 @@ public class GameFrame extends JFrame implements ActionListener {
    int randomNumber = new Random().nextInt(10) + 1;
    int numGuesses = 0;
    
+   JFrame jf = new JFrame();
+   JPanel j = new JPanel();
    JTextField textField = new JTextField(5);
    JButton button = new JButton("Guess");
-   JLabel label = new JLabel(numGuesses + " guesses");
-      
+   JLabel label = new JLabel("You've had " + numGuesses + " guesses");
+   
    public GameFrame() {
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      setTitle("Guess the Number");
+      
+      setTitle("Guess the Number please ");
+      j.setPreferredSize(new Dimension(400,600));
+      jf.getContentPane().add(j);
       setLayout(new FlowLayout());
       add(textField);
       add(button);
