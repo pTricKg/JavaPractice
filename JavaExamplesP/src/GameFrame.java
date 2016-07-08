@@ -1,4 +1,4 @@
-import java.awt.FlowLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -8,8 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JPanel;
-import java.awt.Dimension;
-import java.awt.ComponentOrientation;
+
 
 public class GameFrame extends JFrame implements ActionListener {
    private static final long serialVersionUID = 1L;
@@ -30,7 +29,9 @@ public class GameFrame extends JFrame implements ActionListener {
       j.setPreferredSize(new Dimension(100,200));
       jf.getContentPane().add(j);
       jf.setLayout(new FlowLayout());
-      jf.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+      //Container contentPane = jf.getContentPane();
+	  jf.applyComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+      //jf.setComponentOrientation(LEFT_ALLIGNMENT);
       jf.add(textField);
       jf.add(button);
       jf.add(label);
