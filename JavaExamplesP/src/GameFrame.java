@@ -29,9 +29,6 @@ public class GameFrame extends JFrame implements ActionListener {
       j.setPreferredSize(new Dimension(100,200));
       jf.getContentPane().add(j);
       jf.setLayout(new FlowLayout());
-      //Container contentPane = jf.getContentPane();
-	  jf.applyComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
-      //jf.setComponentOrientation(LEFT_ALLIGNMENT);
       jf.add(textField);
       jf.add(button);
       jf.add(label);
