@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JPanel;
 import java.awt.Dimension;
+import java.awt.ComponentOrientation;
 
 public class GameFrame extends JFrame implements ActionListener {
    private static final long serialVersionUID = 1L;
