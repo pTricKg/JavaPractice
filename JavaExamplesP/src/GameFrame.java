@@ -23,18 +23,19 @@ public class GameFrame extends JFrame implements ActionListener {
    JLabel label = new JLabel("You've had " + numGuesses + " guesses");
    
    public GameFrame() {
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       
-      setTitle("Guess the Number please ");
-      j.setPreferredSize(new Dimension(400,600));
+      jf.setTitle("Guess the Number please ");
+      j.setPreferredSize(new Dimension(100,200));
       jf.getContentPane().add(j);
-      setLayout(new FlowLayout());
-      add(textField);
-      add(button);
-      add(label);
+      jf.setLayout(new FlowLayout());
+      jf.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+      jf.add(textField);
+      jf.add(button);
+      jf.add(label);
       button.addActionListener(this);
-      pack();
-      setVisible(true);
+      jf.pack();
+      jf.setVisible(true);
    }
 
    @Override
