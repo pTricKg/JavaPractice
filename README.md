@@ -1,1 +1,1 @@
-Java Programming Practice/Learning
+Java Programming Practice and Learning.
