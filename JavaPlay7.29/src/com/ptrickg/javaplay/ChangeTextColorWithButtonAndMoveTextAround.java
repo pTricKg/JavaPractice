@@ -11,7 +11,7 @@ import javax.swing.*;
  *
  */
 
-public class JavaPlayTwo {
+public class ChangeTextColorWithButtonAndMoveTextAround {
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Your mind is like a diamond!");

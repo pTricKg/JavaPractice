@@ -13,11 +13,11 @@ import javax.swing.*;
 
 // display window with blinking text using runnable
 // color can be changed by button press
-public class JavaPlayTres {
+public class ChangeTextColorWithButton {
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("JavaPlayTres");
-		frame.add(new JavaComponentTres("What the FRACK!!"));
+		frame.add(new JavaComponentTres("What the FRAK!!"));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500,500);
 		frame.setVisible(true);
