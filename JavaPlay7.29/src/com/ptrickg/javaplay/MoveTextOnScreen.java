@@ -13,7 +13,7 @@ import javax.swing.*;
 
 // A Simple program that opens window and displays saying which
 // can be moved around via mouse
-public class JavaPlay {
+public class MoveTextOnScreen {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Your mind is like a diamond!");
 		frame.add(new JavaComponent("Hi there! Click and move me around, please!"));

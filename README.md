@@ -1,1 +1,1 @@
-Playing with Java!
+Java Programming Practice and Learning.
